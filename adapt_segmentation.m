@@ -38,10 +38,10 @@ for i=1:size(firsts,2)
     cur_distance=distance_riemann(cov_first,cov_second);
     distances = [distances cur_distance];
 end
-       for i=1:size(data,1)
-       plot((1:length(data))/200, data(i));
+       
+       plot((1:length(data))/200, data);
        hold on;
-       end
+       
        scatter(second, distances);
        
 end
